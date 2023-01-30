@@ -1,0 +1,154 @@
+*
+{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+body
+{
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+.Drop-down.menu
+{
+    background: transparent;
+    text-align: center;
+}
+.Drop-down.menu ul
+{
+display:inline-flex;
+list-style: none;
+color: red;
+}
+.Drop-down.menu ul li
+{
+    width: 120px;
+    margin: 15px;
+    padding: 15px;
+}
+.Drop-down.menu ul li a
+{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.active,.Drop-down.menu ul li:hover
+{
+background: transparent;
+border-radius: 3px;
+}
+.sub-menu-1
+{
+    display: none;
+}
+.Drop-down.menu ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: white;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.Drop-down.menu ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+.Drop-down.menu ul li:hover .sub-menu-1 ul li
+{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted rgb(0, 0, 0);
+    background: white;
+    border-radius: 0;
+    text-align: left;
+}
+.Drop-down.menu ul li:hover .sub-menu-1 ul li:last-child
+{
+border-bottom: none;
+}
+.Drop-down.menu ul li:hover .sub-menu-1 ul li a:hover
+{
+color: #000000;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+position: absolute;
+display: block;
+margin-top: 10px;
+margin-left: 100px;
+background: white;
+}
+.container
+{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   position: absolute;
+   left: 300px;
+}
+.contact-box
+{
+    width: 500px;
+    height: auto;
+    background-color: #ff0000;
+    box-shadow: 0 0 20px 0 rgb(255, 255, 255);
+    top: 575px;
+    left: -1000px;
+    transform: translate(-50%,-50%);
+    position: relative;
+}
+.form
+{
+    margin: 35px;
+}
+.input-field
+{
+    width: 400px;
+    height: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid #777;
+    border-radius: 14px;
+    outline: none;
+}
+.textarea-field
+{
+    height: 150px;
+    padding-top: 10px;
+}
+.btn
+{
+    border-radius: 20px;
+    color: rgb(124, 124, 124);
+    margin-top: 18px;
+    padding: 10px;
+    background-color: #47c35a;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+}
+.footer
+{
+    background-color: #cc00ff;
+    padding: 35px;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
